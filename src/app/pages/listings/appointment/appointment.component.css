@@ -1,0 +1,12 @@
+.ant-col.card {
+    padding: 30px;
+}
+nz-select {
+    width: 200px;
+  }
+.appointmentSettings {
+  padding: 15px 30px;
+}
+.appointmentSettings .headingTitle {
+  padding: 30px 30px 0;
+}

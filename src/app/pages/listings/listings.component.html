@@ -1,0 +1,31 @@
+<nz-breadcrumb>
+    <nz-breadcrumb-item>Listings</nz-breadcrumb-item>
+    <nz-breadcrumb-item>30 Jackson Avenue</nz-breadcrumb-item>
+</nz-breadcrumb>
+
+<div class="inner-content">
+
+    <nz-tabset [nzSelectedIndex]="selectedTabIndex">
+        <nz-tab nzTitle="Details">
+            Details tab
+        </nz-tab>
+        <nz-tab nzSelect nzTitle="Appointment">
+            <!---->
+            <app-appointment></app-appointment>
+            <!---->
+        </nz-tab>
+        <nz-tab nzTitle="Offer">
+            Offers tab
+        </nz-tab>
+        <nz-tab nzTitle="Clients">
+            Clients tab
+        </nz-tab>
+        <nz-tab nzTitle="Agents">
+            Agents tab
+        </nz-tab>
+        <nz-tab nzTitle="Activity">
+            Activity tab
+        </nz-tab>
+    </nz-tabset>
+
+</div>

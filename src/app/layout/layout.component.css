@@ -1,0 +1,159 @@
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .trigger:hover {
+    color: #1890ff;
+  }
+
+  .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+  }
+
+  nz-header {
+    background: #fff;
+  }
+
+  nz-content {
+    margin: 25px 25px;
+  }
+
+  nz-breadcrumb {
+    margin: 16px 0;
+  }
+
+  .inner-content {
+    padding: 24px;
+    background: #fff;
+    min-height: 360px;
+  }
+
+  nz-footer {
+    text-align: center;
+  }
+  .ant-layout {
+
+    background: #f4f4fb;
+    height:100%;
+}
+
+.ant-layout-sider {
+  background: #fff;
+}
+.ant-menu.ant-menu-dark{
+  background: #fff;
+  color: #ADADAD;
+}
+.ant-menu-item{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 10px 0;
+  height: auto;
+  margin: 0px!important;
+}
+.anticon {
+  font-size: 17px;
+}
+.ant-menu-item.ant-menu-item-selected {
+  background: #1890FF;
+  color: #fff;
+}
+.ant-menu-item:hover{
+  background: #1890FF;
+  color: #fff;
+}
+.headerTop {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-box {
+  flex: 1 0 50%;
+}
+.headerDrop {
+  flex: 1 0 50%;
+  text-align: right;
+}
+.headerDrop ul{
+display:flex;
+list-style:none;
+justify-content: flex-end;
+}
+.headerDrop ul li{
+width:auto;
+display: inline-block;
+margin:0 20px 0 0;
+font-size:16px;
+display: inline-flex;
+    align-items: center;
+  }
+  .headerDrop ul li:last-child{
+margin:0;
+      }
+      .sidebar-bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* padding: 20px; */
+        height: 70px;
+        background: #1890FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headerDrop ul li span {
+      background: #40a9ff;
+      padding: 5px;
+      border-radius: 50%;
+      margin: 0 9px 0 0;
+      width: 36px;
+    height: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .sidebarToggle span{
+      position: absolute;
+      top: 50%;
+      transform: translate(-50% , -50%);
+      left: 50%;
+    }
+    .sidebarToggle {
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #fff;
+      width: 20px;
+      height: 66px;
+      cursor:pointer;
+      }
+      .sidebarToggle :before{
+        content: "";
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        border-left: 10px solid #fff;
+        border-right: 10px solid transparent;
+        position: absolute;
+        top: -42px;
+        transform: skew(0deg , -2deg);
+        left: -7px;
+      }
+      .sidebarToggle :after{
+        content: "";
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        border-left: 10px solid #fff;
+        border-right: 10px solid transparent;
+        position: absolute;
+        bottom: -32px;
+        transform: skew(10deg, -45deg);
+        left: -8px;
+      }

@@ -1,0 +1,78 @@
+
+.switchTable {
+    padding: 20px;
+  }
+  .switchTable th{
+      background:transparent;
+      border-bottom:none;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 0 13px 30px;  
+  }
+  .switchTable th span{
+    font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 29px;
+      position: relative;
+      margin-left: -33px;
+      display: inline-block;
+      width: 32px;
+  }
+  .switchInActive + .dateText {
+    color: #808080;
+    border-bottom: 2px solid #808080;
+  }
+  .switchInActive + .dateText span {
+    color: #808080;
+  }
+  .switchActive + .dateText {
+    color: #3081ED;
+    border-bottom: 2px solid #1890FF;
+  }
+  .switchActive + .dateText span {
+    color: #3081ED;
+}
+  .switchTable tr:hover td{
+    background:transparent; 
+  }
+  .switchTable td{
+    padding: 0 13px;
+    border-bottom: none;
+  }
+  .switchTable td .activeTab{
+    background: #C4F4FF;
+    height: 45px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .switchTable td .inActiveTab{
+    background: #C8C8C8;
+    height: 45px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .dateText{
+      padding-left: 33px;
+      margin-top: 15px;
+      padding-bottom: 16px;
+  }
+  .timeText {
+    position: absolute;
+    right: 100%;
+    white-space: nowrap;
+    margin-right: 10px;
+    color: #808080;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  nz-switch {
+    padding-left: 35px;
+  }

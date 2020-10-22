@@ -1,0 +1,65 @@
+<div nz-row>
+    <div nz-col class="ant-col-24 switchTable">
+        <nz-table #basicTable [nzData]="listOfData" [nzPageSize]="50" hideOnSinglePage=true>
+            <thead>
+                <tr>
+                    <th>
+                        <div nz-col [ngClass]="[toggleFirst ? 'switchActive' : 'switchInActive']">
+                            <nz-switch (ngModelChange)="toggleSwitch($event,'activeFirst')" [ngModel]="toggleFirst"></nz-switch>
+                        </div>
+                        <div nz-col class="dateText"><span>7</span> Mon</div>
+                    </th>
+                    <th>
+                        <div nz-col [ngClass]="[toggleSecond ? 'switchActive' : 'switchInActive']">
+                            <nz-switch (ngModelChange)="toggleSwitch($event,'activeSecond')" [ngModel]="toggleSecond"></nz-switch>
+                        </div>
+                        <div nz-col class="dateText"><span>8</span> Tue</div>
+                    </th>
+                    <th>
+                        <div nz-col [ngClass]="[toggleThird ? 'switchActive' : 'switchInActive']">
+                            <nz-switch (ngModelChange)="toggleSwitch($event,'activeThird')" [ngModel]="toggleThird"></nz-switch>
+                        </div>
+                        <div nz-col class="dateText"><span>9</span> Wed</div>
+                    </th>
+                    <th>
+                        <div nz-col [ngClass]="[toggleFourth ? 'switchActive' : 'switchInActive']">
+                            <nz-switch (ngModelChange)="toggleSwitch($event,'activeFourth')" [ngModel]="toggleFourth"></nz-switch>
+                        </div>
+                        <div nz-col class="dateText"><span>10</span> Tue</div>
+                    </th>
+                    <th>
+                        <div nz-col [ngClass]="[toggleFifth ? 'switchActive' : 'switchInActive']">
+                            <nz-switch (ngModelChange)="toggleSwitch($event,'activeFifth')" [ngModel]="toggleFifth"></nz-switch>
+                        </div>
+                        <div nz-col class="dateText"><span>11</span> Fri</div>
+                    </th>
+                    <th>
+                        <div nz-col [ngClass]="[toggleSixth ? 'switchActive' : 'switchInActive']">
+                            <nz-switch (ngModelChange)="toggleSwitch($event,'activeSixth')" [ngModel]="toggleSixth"></nz-switch>
+                        </div>
+                        <div nz-col class="dateText"><span>12</span> Sat</div>
+                    </th>
+                    <th>
+                        <div nz-col [ngClass]="[toggleSeventh ? 'switchActive' : 'switchInActive']">
+                            <nz-switch (ngModelChange)="toggleSwitch($event,'activeSeventh')" [ngModel]="toggleSeventh"></nz-switch>
+                        </div>
+                        <div nz-col class="dateText"><span>13</span> Sun</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of basicTable.data">
+                    <td>
+                        <div nz-col (click)="data.activeFirst = !data.activeFirst" [ngClass]="[data.activeFirst ? 'activeTab' : 'inActiveTab']"><span class="timeText">{{ data.time }}</span></div>
+                    </td>
+                    <td><div nz-col (click)="data.activeSecond = !data.activeSecond" [ngClass]="[data.activeSecond ? 'activeTab' : 'inActiveTab']"></div></td>
+                    <td><div nz-col (click)="data.activeThird = !data.activeThird" [ngClass]="[data.activeThird ? 'activeTab' : 'inActiveTab']"></div></td>
+                    <td><div nz-col (click)="data.activeFourth = !data.activeFourth" [ngClass]="[data.activeFourth ? 'activeTab' : 'inActiveTab']"></div></td>
+                    <td><div nz-col (click)="data.activeFifth = !data.activeFifth" [ngClass]="[data.activeFifth ? 'activeTab' : 'inActiveTab']"></div></td>
+                    <td><div nz-col (click)="data.activeSixth = !data.activeSixth" [ngClass]="[data.activeSixth ? 'activeTab' : 'inActiveTab']"></div></td>
+                    <td><div nz-col (click)="data.activeSeventh = !data.activeSeventh" [ngClass]="[data.activeSeventh ? 'activeTab' : 'inActiveTab']"></div></td>
+                </tr>
+            </tbody>
+        </nz-table>
+    </div>
+</div>
